@@ -1,16 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Embed TV Online - Roger Play</title>
-<meta content="Embed TV Online é uma plataforma de embed de canais de Tv Online Grátis, Canais de Futebol, Filmes, Séries e muito mais!" name="description"/>
-<link href="https://embedtvonline.com/" rel="canonical"/>
+<title>Embed Canais TV - Player de TV Online</title>
+<meta content="Embed Canais TV é uma plataforma de embed de canais de Tv Online Grátis, Canais de Futebol, Filmes, Séries e muito mais!" name="description"/>
 <meta content="index,follow" name="robots"/>
 <meta content="Embed Canais" name="author"/>
-<link rel="icon" href="/icons/embedtv.png" sizes="32x32"/>
-<link rel="icon" href="/icons/embedtv.png" sizes="192x192"/>
-<link rel="apple-touch-icon" href="/icons/embedtv.png"/>
+<link rel="icon" href="/icons/icon2026.png" sizes="32x32"/>
+<link rel="icon" href="/icons/icon2026.png" sizes="192x192"/>
+<link rel="apple-touch-icon" href="/icons/icon2026.png"/>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2T9N2RHEW3"></script>
@@ -22,27 +22,26 @@
   gtag('config', 'G-2T9N2RHEW3');
 </script>
 
-<!-- Open Graph / Twitter Cards -->
+<!-- Open Graph / Twitter Cards (melhora social e compartilhamento) -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:site_name" content="Embed TV Online">
-<meta property="og:title" content="Embed TV Online — Assistir TV online ao vivo, esportes, filmes e séries">
+<meta property="og:site_name" content="Embed Canais TV">
+<meta property="og:title" content="Embed Canais TV — Assistir TV online ao vivo, esportes, filmes e séries">
 <meta property="og:description" content="Assista canais de TV online ao vivo: esportes, filmes, séries e notícias. Plataforma simples para abrir o player e copiar o iframe.">
-<meta property="og:url" content="https://embedtvonline.com/">
-<meta property="og:image" content="https://embedtvonline.com/icons/og-image.jpg">
+<meta property="og:image" content="/icons/icon2026.png">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Embed TV Online — TV online ao vivo e embeds">
-<meta name="twitter:description" content="Canais de TV online, esportes, filmes, séries e notícias em tempo real.">
-<meta name="twitter:image" content="https://embedtvonline.com/icons/og-image.jpg">
+<meta name="twitter:title" content="Embed Canais  TV — TV online ao vivo e embeds">
+<meta name="twitter:description" content="Canais de TV , esportes, filmes, séries e notícias em tempo real.">
+<meta name="twitter:image" content="/icons/icon2026.png">
 
 
 <style>
 :root{
   --bg:#0e0f12;--surface:#0f1218;--card:#1f1f1f;--fg:#e8e8ea;--muted:#a7abb3;
-  --accent:#fa3706;--radius:16px;--shadow:0 4px 14px rgba(0,0,0,.35);
-  --container:min(1400px,94vw);
-  --footer-bg: #0b1330;
+  --accent:#0060ff;--radius:12px;--shadow:0 4px 14px rgba(0,0,0,.35);
+  --container:min(1100px,94vw);
+  --footer-bg: #0b1330;         /* fundo do bloco de SEO */
   --footer-border: rgba(255,255,255,.10);
   --link-underline: currentColor;
 }
@@ -50,19 +49,19 @@
 body {
     margin: 0;
     font: 500 16px / 1.45 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans";
-    background: #000000;
+    background: #0e0f11;
     color: var(--fg);
     min-height: 100vh;
 }
 
 /* Header */
-.site-header{position:relative;top:0;z-index:10;background:#fa0303;backdrop-filter:blur(10px) saturate(140%);border-bottom:0 solid rgba(255,255,255,.06)}
+.site-header{position:relative;top:0;z-index:10;background:#00f3ff;backdrop-filter:blur(10px) saturate(140%);border-bottom:0 solid rgba(255,255,255,.06)}
 .header-inner{width:var(--container);margin:0 auto;padding:16px 0;display:flex;align-items:center;justify-content:center;text-align:center}
 .brand{display:flex;flex-direction:column;align-items:center;gap:8px}
 .brand-row{display:inline-flex;align-items:center;gap:12px}
 .logo{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:transparent;border: 3px solid #333;}
 .logo svg{fill:#333;display:block}
-.brand h1{margin:0;font-size:clamp(24px,2.6vw,28px);font-weight:900;letter-spacing:.2px}
+.brand h1{margin:0;font-size:clamp(24px,2.6vw,34px);font-weight:900;letter-spacing:.2px}
 .brand h1 a{color:#333;text-decoration:none}
 .brand .tagline{margin:2px 0 0;color:#333;font-size:14.5px;line-height:1.55;max-width:780px}
 @media (max-width:992px){.logo{width:40px;height:40px;border-radius:14px}.brand .tagline{font-size:14px;display: none;};}
@@ -70,41 +69,52 @@ body {
 /* Barra de categorias + busca */
 .controls{width:var(--container);margin:0 auto;padding:14px 0 0}
 .cat-bar{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:14px auto 10px}
-.cat-btn{
-  border:2px solid #333;background:#0f1624;color:#fff;
-  padding:12px 20px;border-radius:999px;font:700 13px/1 system-ui;cursor:pointer;
-  transition:filter .15s,transform .06s;user-select:none
+.cat-btn {
+    border: 1px solid #303438;
+    background: #2e3237;
+    color: #fff;
+    padding: 15px 22px;
+    border-radius: 12px;
+    font: 700 13px / 1 system-ui;
+    cursor: pointer;
+    transition: filter .15s, transform .06s;
+    user-select: none;
 }
-.cat-btn:hover{filter:brightness(1.1);background:#f80202;color:#333}
+.cat-btn:hover{filter:brightness(1.1);background:#00f3ff;color:#333}
 .cat-btn:active{transform:translateY(1px)}
-.cat-btn.active{background:#fa0303;border-color:#000;color:#fff}
+.cat-btn.active{background:#00f3ff;border-color:#000;color:#fff}
 
 .search-wrap{display:flex;justify-content:center;margin:0 auto 10px;padding:0 12px}
-.search-input{
-  width:min(720px,100%);padding:12px 14px;border-radius:12px;
-  border:1px solid #333;background:transparent;color:#ddd;
-  font:600 15px/1.2 system-ui;outline:none;
+.search-input {
+    width: min(720px, 100%);
+    padding: 18px 14px 18px 40px;
+    border-radius: 12px;
+    border: 1px solid #2c2f33;
+    background: #151619;
+    color: #ddd;
+    font: 600 15px / 1.2 system-ui;
+    outline: none;
 }
 .search-input::placeholder{color:#ddd}
 
 /* Grid */
-.grid{width:var(--container);margin:18px auto 60px;display:grid;grid-template-columns:repeat(7,1fr);gap:10px;margin-top:5px;padding: 10px;}
+.grid{width:var(--container);margin:18px auto 60px;display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:5px;padding: 10px;}
 @media (max-width:1200px){.grid{grid-template-columns:repeat(4,1fr)}}
 @media (max-width:992px){.grid{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:768px){.grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:480px){.grid{grid-template-columns:repeat(2,1fr)}}
 
 .card {
-    background: #101010;
+    background: #26292e;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     overflow: hidden;
     transition: transform .15s, box-shadow .2s;
-    border: 1px solid #2c2c2c;
+    border: 1px solid #1e1e1e;
 }
-.card:hover{transform:translateY(-2px);border:1px solid #fa0707;}
+.card:hover{transform:translateY(-2px);border:2px solid #00f3ff;}
 
-.thumb{display:block;position:relative;aspect-ratio:16/9;background:#191919}
+.thumb{display:block;position:relative;aspect-ratio:16/9;background:#26292e}
 .thumb img{width:100%;height:100%;object-fit:contain;display:block;}
 
 .title{padding:12px 12px 12px;font-size:15px;font-weight:700;text-align:center;color:#e7ebf5;text-transform:none}
@@ -112,15 +122,15 @@ body {
 .watch-btn{display:block;width:100%;padding:12px 14px;border-radius:10px;background:#30363f;color:#fff;text-align:center;text-decoration:none;font-weight:800;letter-spacing:.2px;border:0;transition:filter .15s, transform .06s}
 .watch-btn:hover{filter:brightness(1.05)} .watch-btn:active{transform:translateY(1px)}
 
-.embedrow{position:relative; padding:8px 12px;}
+.embedrow{position:relative; padding:8px 12px;} /* padding vertical simétrico */
 .embed-input {
     display: block;
     width: 100%;
     max-width: 100%;
-    font: 500 10px / 1.35 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font: 500 13px / 1.35 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     color: #888;
-    background: #000000;
-    border: 1px solid #161616;
+    background: #0e0f11;
+    border: 0px solid #161616;
     border-radius: 8px;
     padding: 8px 30px 8px 10px;
 }
@@ -135,19 +145,26 @@ body {
 .copy-toast.show{opacity:1}
 
 /* Footer */
-footer.embedtv{background:#111;color:#fff;text-align:center;padding:10px 0 10px 0;border:0}
+footer.embedtv{background:#2a2f36;color:#00f3ff;text-align:center;padding:10px 0 10px 0;border:0}
 footer.embedtv small{font-size:12px;letter-spacing:.2px}
 
+/* ==== EXTRA: categorias, busca com ícone e botão copiar com ícone ==== */
 .controls{width:var(--container);margin:0 auto;padding:14px 0 0}
 .cat-bar{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:14px auto 10px}
-.cat-btn{
-  border:2px solid #333;background:transparent;color:#fff;
-  padding:15px 22px;border-radius:12px;font:700 13px/1 system-ui;cursor:pointer;
-  transition:filter .15s,transform .06s;user-select:none
+.cat-btn {
+    border: 1px solid #333;
+    background: #1e2125;
+    color: #fff;
+    padding: 15px 22px;
+    border-radius: 12px;
+    font: 700 13px / 1 system-ui;
+    cursor: pointer;
+    transition: filter .15s, transform .06s;
+    user-select: none;
 }
 .cat-btn:hover{filter:brightness(1.1)}
 .cat-btn:active{transform:translateY(1px)}
-.cat-btn.active{background:linear-gradient(45deg, #f80303, #fc0202);border-color:transparent;color:#333}
+.cat-btn.active{background:#00f3ff;border-color:transparent;color:#333}
 
 .search-wrap{display:flex;justify-content:center;margin:0 auto 10px;padding:0 12px;position:relative;margin-top: 30px;}
 .search-icon{
@@ -156,13 +173,19 @@ footer.embedtv small{font-size:12px;letter-spacing:.2px}
 }
 @media (max-width:760px){ .search-icon{left:22px} }
 
-.search-input{
-  width:min(720px,100%);padding:18px 14px 18px 40px;border-radius:12px;
-  border:2px solid #333;background:transparent;color:#ddd;
-  font:600 15px/1.2 system-ui;outline:none;
+.search-input {
+    width: min(720px, 100%);
+    padding: 18px 14px 18px 40px;
+    border-radius: 12px;
+    border: 1px solid #2c2f33;
+    background: #191b1e;
+    color: #ddd;
+    font: 600 15px / 1.2 system-ui;
+    outline: none;
 }
 .search-input::placeholder{color:#fff}
 
+/* Botão de copiar dentro da .embedrow */
 .embedrow{position:relative}
 .copy-btn{
   position:absolute;right:16px;top:50%;transform:translateY(-50%);
@@ -174,26 +197,29 @@ footer.embedtv small{font-size:12px;letter-spacing:.2px}
 .copy-btn:active{transform:translateY(calc(-50% + 1px))}
 .copy-toast{
   position:absolute;right:20px;bottom:100%;margin-bottom:6px;
-  background:#0f1624;border:1px solid #2a3750;color:#dfe8ff;
+  background:#0f1624;border:1px solid #00f3ff;color:#dfe8ff;
   font:700 11px/1 system-ui;padding:6px 8px;border-radius:8px;opacity:0;pointer-events:none;transition:opacity .15s
 }
 .copy-toast.show{opacity:1}
 
+/* Títulos com altura estável: 1 linha em desktop, 2 no mobile */
 .title{
   padding:12px 12px;
   font-size:15px;font-weight:700;text-align:center;color:#e7ebf5;
-  min-height: 22px;
+  min-height: 22px; /* ~1 linha */
 }
 @media (max-width:768px){
-  .title{ min-height: 44px; }
+  .title{ min-height: 44px; } /* permite 2 linhas sem empurrar nada depois */
 }
 
+/* Linha do botão com altura garantida */
 .watch-row{ padding:0 12px 10px; min-height: 48px; display:flex; align-items:center; }
 
+/* A capa já tem aspect-ratio; fixe também o fluxo da imagem dentro */
 .thumb {
     position: relative;
     aspect-ratio: 16 / 9;
-    background: #101010;
+    background: #26292e;
 }
 .thumb img{ 
   position: absolute;
@@ -207,10 +233,14 @@ footer.embedtv small{font-size:12px;letter-spacing:.2px}
     object-fit: contain;
 }
 
+/* Evita micro-shifts do grid quando fontes/pixels assentar */
 .grid{ contain: layout paint; }
+
+/* Garante que o campo de embed e o botão copiar não mexem layout ao aparecer o toast */
 .embedrow{ position:relative; min-height: 46px; }
 .copy-toast{ will-change: opacity; }
 
+/* Navegação rápida acima do texto do rodapé */
 .quick-nav{
   width: var(--container);
   margin: 14px auto 6px;
@@ -232,11 +262,12 @@ footer.embedtv small{font-size:12px;letter-spacing:.2px}
 }
 .quick-nav a:hover{ opacity: .9; }
 .quick-nav a:focus-visible{
-  outline: 2px solid #fff; outline-offset: 2px; border-radius: 4px;
 }
+  outline: 2px solid #fff; outline-offset: 2px; border-radius: 4px;
 
+/* Bloco de parágrafos do rodapé — isolado visualmente */
 .footer-seo{
-  background: #111111;
+  background: #000;
   border-top: 0px solid var(--footer-border);
   border-bottom: 1px solid var(--footer-border);
   margin: 16px 0 10px;
@@ -263,6 +294,7 @@ footer.embedtv small{font-size:12px;letter-spacing:.2px}
   color: #e6f0ff; font-size: 12.5px;
 }
 
+/* Barra de compartilhamento simples */
 .share-bar{
   width: var(--container);
   margin: 10px auto 2px;
@@ -287,6 +319,7 @@ footer.embedtv small{font-size:12px;letter-spacing:.2px}
   outline: 2px solid #fff; outline-offset: 2px; border-radius: 4px;
 }
 
+/* Responsivo: aumenta respiro em telas pequenas */
 @media (max-width: 640px){
   .footer-seo__inner{ padding: 16px 14px; }
   .footer-seo p{ font-size: 14.5px; }
@@ -295,6 +328,71 @@ footer.embedtv small{font-size:12px;letter-spacing:.2px}
 @media (prefers-reduced-motion: reduce){
   .quick-nav a, .share-link{ transition: none; }
 }
+
+
+
+
+/* ===== Sessão: Domínios alternativos ===== */
+.alt-domains{
+  width: var(--container);
+  margin: 14px auto 0;
+  padding: 0 12px;
+}
+
+.alt-domains__box {
+    border: 0px solid #00f3ff;
+    border-radius: 14px;
+    background: #222529;
+    box-shadow: var(--shadow);
+    padding: 14px 14px 12px;
+    text-align: center;
+}
+
+.alt-domains__title {
+    margin: 0 0 8px;
+    font-size: 15px;
+    font-weight: 900;
+    color: #00f3ff;
+}
+
+.alt-domains__msg{
+  margin: 0 0 12px;
+  font-size: 13.5px;
+  color: #bcbcbc;
+  line-height: 1.55;
+}
+
+.alt-domains__list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.alt-domains__list a{
+  display: inline-block;
+  padding: 10px 14px;
+  border: 1px solid #00f3ff;           /* borda verde limão */
+  border-radius: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  background: transparent;
+  transition: filter .15s, transform .06s;
+}
+
+.alt-domains__list a:hover{
+  filter: brightness(1.1);
+  background: #00f3ff;
+  color: #111;
+}
+
+.alt-domains__list a:active{
+  transform: translateY(1px);
+}
+
 </style>
 </head>
 <body>
@@ -305,665 +403,835 @@ footer.embedtv small{font-size:12px;letter-spacing:.2px}
         <div aria-hidden="true" class="logo">
           <svg height="28" viewBox="0 0 640 640" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M392.8 65.2C375.8 60.3 358.1 70.2 353.2 87.2L225.2 535.2C220.3 552.2 230.2 569.9 247.2 574.8C264.2 579.7 281.9 569.8 286.8 552.8L414.8 104.8C419.7 87.8 409.8 70.1 392.8 65.2zM457.4 201.3C444.9 213.8 444.9 234.1 457.4 246.6L530.8 320L457.4 393.4C444.9 405.9 444.9 426.2 457.4 438.7C469.9 451.2 490.2 451.2 502.7 438.7L598.7 342.7C611.2 330.2 611.2 309.9 598.7 297.4L502.7 201.4C490.2 188.9 469.9 188.9 457.4 201.4zM182.7 201.3C170.2 188.8 149.9 188.8 137.4 201.3L41.4 297.3C28.9 309.8 28.9 330.1 41.4 342.6L137.4 438.6C149.9 451.1 170.2 451.1 182.7 438.6C195.2 426.1 195.2 405.8 182.7 393.3L109.3 320L182.6 246.6C195.1 234.1 195.1 213.8 182.6 201.3z"></path></svg>
         </div>
-        <h1><a href="/">Roger Play TV</a></h1>
+        <h1><a href="/">Embed Canais TV</a></h1>
       </div>
-      <p class="tagline">Teste 2026 <!14+>.</p>
+      <p class="tagline">Embed Canais TV é uma plataforma de embed de TV grátis. Abra o player e copie o iframe para usar no seu site.</p>
     </div>
   </div>
 </header>
 
+
+
 <section class="controls" aria-label="Filtros e busca" id="ec-controls">
   <div class="cat-bar" id="catBar"></div>
   <div class="search-wrap">
-    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg"
-         viewBox="0 0 640 640" aria-hidden="true" focusable="false" fill="white">
-      <path d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"/>
-    </svg>
+    <!-- Ícone lupa dentro do input -->
+<svg class="search-icon" xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 640 640" aria-hidden="true" focusable="false" fill="white">
+  <path d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"/>
+</svg>
+
     <input id="searchInput" class="search-input" type="search"
            placeholder="Buscar canais..." autocomplete="off" aria-label="Buscar canais">
   </div>
 </section>
 
+
 <main class="grid">
-<h2 style="grid-column:1 / -1; text-align:center; margin:30px 0 8px; font-weight:800; color: #00d9ff;">Esportes</h2>
+
+<h2 style="grid-column:1 / -1; text-align:center; margin:30px 0 8px; font-weight:800; color: #00f3ff;">Esportes</h2>
+
 <div class="card">
-<a aria-label="Band Sports" class="thumb" href="https://embedtvonline.com/bandsports/">
-<img alt="Band Sports" decoding="async" src="https://embedtvonline.com/images/bandsports.png"/>
+<a aria-label="Amazon Prime" class="thumb" href="https://3embeddecanais.xyz/amazonprimevideo/">
+<img alt="Amazon Prime Video" decoding="async" src="https://embedcanaisdetv.com/images/amazonprimevideo.png"/>
+</a>
+<div class="title"><span lang="en">Amazon Prime</span></div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/amazonprimevideo/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div>
+
+<div class="card">
+<a aria-label="Amazon Prime 02" class="thumb" href="https://3embeddecanais.xyz/amazonprimevideo02/">
+<img alt="Amazon Prime Video" decoding="async" src="https://embedcanaisdetv.com/images/amazonprimevideo.png"/>
+</a>
+<div class="title"><span lang="en">Amazon Prime 02</span></div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/amazonprimevideo02/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div>
+
+<div class="card">
+<a aria-label="Amazon Prime 03" class="thumb" href="https://3embeddecanais.xyz/amazonprimevideo03/">
+<img alt="Amazon Prime Video" decoding="async" src="https://embedcanaisdetv.com/images/amazonprimevideo.png"/>
+</a>
+<div class="title"><span lang="en">Amazon Prime 03</span></div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/amazonprimevideo03/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div>
+
+<div class="card">
+<a aria-label="Amazon Prime 04" class="thumb" href="https://3embeddecanais.xyz/amazonprimevideo04/">
+<img alt="Amazon Prime Video" decoding="async" src="https://embedcanaisdetv.com/images/amazonprimevideo.png"/>
+</a>
+<div class="title"><span lang="en">Amazon Prime 04</span></div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/amazonprimevideo04/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div>
+
+<div class="card">
+<a aria-label="Amazon Prime 05" class="thumb" href="https://3embeddecanais.xyz/amazonprimevideo05/">
+<img alt="Amazon Prime Video" decoding="async" src="https://embedcanaisdetv.com/images/amazonprimevideo.png"/>
+</a>
+<div class="title"><span lang="en">Amazon Prime 05</span></div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/amazonprimevideo05/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div>
+
+<div class="card">
+<a aria-label="Band Sports" class="thumb" href="https://3embeddecanais.xyz/bandsports/">
+<img alt="Band Sports" decoding="async" src="https://embedcanaisdetv.com/images/bandsports.png"/>
 </a>
 <div class="title">Band Sports</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/bandsports/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Canal Off" class="thumb" href="https://embedtvonline.com/canaloff/">
-<img alt="Canal Off" decoding="async" src="https://embedtvonline.com/images/canaloff.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/bandsports/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Canal Off" class="thumb" href="https://3embeddecanais.xyz/canaloff/">
+<img alt="Canal Off" decoding="async" src="https://embedcanaisdetv.com/images/canaloff.png"/>
 </a>
 <div class="title">Canal Off</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/canaloff/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="CazéTV" class="thumb" href="https://embedtvonline.com/cazetv/">
-<img alt="CazéTV" decoding="async" src="https://embedtvonline.com/images/cazetv.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/canaloff/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="CazéTV" class="thumb" href="https://3embeddecanais.xyz/cazetv/">
+<img alt="CazéTV" decoding="async" src="https://embedcanaisdetv.com/images/cazetv.png"/>
 </a>
 <div class="title">CazéTV</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/cazetv/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Combate" class="thumb" href="https://embedtvonline.com/combate/">
-<img alt="Combate" decoding="async" src="https://embedtvonline.com/images/combate.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/cazetv/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Combate" class="thumb" href="https://3embeddecanais.xyz/combate/">
+<img alt="Combate" decoding="async" src="https://embedcanaisdetv.com/images/combate.png"/>
 </a>
 <div class="title">Combate</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/combate/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Disney+" class="thumb" href="https://embedtvonline.com/disneyplus/">
-<img alt="Disney+" decoding="async" src="https://embedtvonline.com/images/disneyplus.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/combate/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="DAZN" class="thumb" href="https://3embeddecanais.xyz/dazn/">
+<img alt="DAZN" decoding="async" src="https://embedcanaisdetv.com/images/dazn.png"/>
+</a>
+<div class="title">DAZN</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/dazn/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Disney+" class="thumb" href="https://3embeddecanais.xyz/disneyplus/">
+<img alt="Disney+" decoding="async" src="https://embedcanaisdetv.com/images/disneyplus.png"/>
 </a>
 <div class="title">Disney+</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/disneyplus/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="ESPN" class="thumb" href="https://embedtvonline.com/espn/">
-<img alt="ESPN" decoding="async" src="https://embedtvonline.com/images/espn.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/disneyplus/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Disney+ 02" class="thumb" href="https://3embeddecanais.xyz/disneyplus02/">
+<img alt="Disney+" decoding="async" src="https://embedcanaisdetv.com/images/disneyplus.png"/>
+</a>
+<div class="title">Disney+ 02</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/disneyplus02/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Disney+ 03" class="thumb" href="https://3embeddecanais.xyz/disneyplus03/">
+<img alt="Disney+" decoding="async" src="https://embedcanaisdetv.com/images/disneyplus.png"/>
+</a>
+<div class="title">Disney+ 03</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/disneyplus03/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Disney+ 04" class="thumb" href="https://3embeddecanais.xyz/disneyplus04/">
+<img alt="Disney+" decoding="async" src="https://embedcanaisdetv.com/images/disneyplus.png"/>
+</a>
+<div class="title">Disney+ 04</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/disneyplus04/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Disney+ 05" class="thumb" href="https://3embeddecanais.xyz/disneyplus05/">
+<img alt="Disney+" decoding="async" src="https://embedcanaisdetv.com/images/disneyplus.png"/>
+</a>
+<div class="title">Disney+ 05</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/disneyplus05/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Disney+ 06" class="thumb" href="https://3embeddecanais.xyz/disneyplus06">
+<img alt="Disney+" decoding="async" src="https://embedcanaisdetv.com/images/disneyplus.png"/>
+</a>
+<div class="title">Disney+ 06</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/disneyplus06/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="ESPN" class="thumb" href="https://3embeddecanais.xyz/espn/">
+<img alt="ESPN" decoding="async" src="https://embedcanaisdetv.com/images/espn.png"/>
 </a>
 <div class="title">ESPN</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/espn/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Max" class="thumb" href="https://embedtvonline.com/max/">
-<img alt="Max" decoding="async" src="https://embedtvonline.com/images/max.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/espn/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="ESPN 2" class="thumb" href="https://3embeddecanais.xyz/espn2/">
+<img alt="ESPN 2" decoding="async" src="https://embedcanaisdetv.com/images/espn.png"/>
+</a>
+<div class="title">ESPN 2</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/espn2/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="ESPN 3" class="thumb" href="https://3embeddecanais.xyz/espn3/">
+<img alt="ESPN 3" decoding="async" src="https://embedcanaisdetv.com/images/espn.png"/>
+</a>
+<div class="title">ESPN 3</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/espn3/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="ESPN 4" class="thumb" href="https://3embeddecanais.xyz/espn4/">
+<img alt="ESPN 4" decoding="async" src="https://embedcanaisdetv.com/images/espn.png"/>
+</a>
+<div class="title">ESPN 4</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/espn4/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="ESPN 5" class="thumb" href="https://3embeddecanais.xyz/espn5/">
+<img alt="ESPN 5" decoding="async" src="https://embedcanaisdetv.com/images/espn.png"/>
+</a>
+<div class="title">ESPN 5</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/espn5/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="ESPN 6" class="thumb" href="https://3embeddecanais.xyz/espn6/">
+<img alt="ESPN 6" decoding="async" src="https://embedcanaisdetv.com/images/espn.png"/>
+</a>
+<div class="title">ESPN 6</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/espn6/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="GE TV" class="thumb" href="https://3embeddecanais.xyz/getv/">
+<img alt="GE TV" decoding="async" src="https://embedcanaisdetv.com/images/getv.png"/>
+</a>
+<div class="title">GE TV</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/getv/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Max" class="thumb" href="https://3embeddecanais.xyz/max/">
+<img alt="Max" decoding="async" src="https://embedcanaisdetv.com/images/max.png"/>
 </a>
 <div class="title">Max</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/max/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/max/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
 </div>
+
 <div class="card">
-<a aria-label="Nosso Futebol" class="thumb" href="https://embedtvonline.com/nossofutebol/">
-<img alt="Nosso Futebol" decoding="async" src="https://embedtvonline.com/images/nossofutebol.png"/>
+<a aria-label="Max" class="thumb" href="https://3embeddecanais.xyz/max02/">
+<img alt="Max" decoding="async" src="https://embedcanaisdetv.com/images/max.png"/>
+</a>
+<div class="title">Max 02</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/max02/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div>
+
+<div class="card">
+<a aria-label="Max" class="thumb" href="https://3embeddecanais.xyz/max03/">
+<img alt="Max" decoding="async" src="https://embedcanaisdetv.com/images/max.png"/>
+</a>
+<div class="title">Max 03</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/max03/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div>
+
+<div class="card">
+<a aria-label="Max" class="thumb" href="https://3embeddecanais.xyz/max04/">
+<img alt="Max" decoding="async" src="https://embedcanaisdetv.com/images/max.png"/>
+</a>
+<div class="title">Max 04</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/max04/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div>
+
+<div class="card">
+<a aria-label="Max" class="thumb" href="https://3embeddecanais.xyz/max05/">
+<img alt="Max" decoding="async" src="https://embedcanaisdetv.com/images/max.png"/>
+</a>
+<div class="title">Max 05</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/max05/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div>
+
+<div class="card">
+<a aria-label="Max" class="thumb" href="https://3embeddecanais.xyz/max06/">
+<img alt="Max" decoding="async" src="https://embedcanaisdetv.com/images/max.png"/>
+</a>
+<div class="title">Max 06</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/max06/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div>
+
+<div class="card">
+<a aria-label="Nosso Futebol" class="thumb" href="https://3embeddecanais.xyz/nossofutebol/">
+<img alt="Nosso Futebol" decoding="async" src="https://embedcanaisdetv.com/images/nossofutebol.png"/>
 </a>
 <div class="title">Nosso Futebol</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/nossofutebol/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="N Sports" class="thumb" href="https://embedtvonline.com/nsports/">
-<img alt="N Sports" decoding="async" src="https://embedtvonline.com/images/nsports.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/nossofutebol/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="N Sports" class="thumb" href="https://3embeddecanais.xyz/nsports/">
+<img alt="N Sports" decoding="async" src="https://embedcanaisdetv.com/images/nsports.png"/>
 </a>
 <div class="title">N Sports</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/nsports/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Paramount +" class="thumb" href="https://embedtvonline.com/paramountplus/">
-<img alt="Paramount +" decoding="async" src="https://embedtvonline.com/images/paramountplus.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/nsports/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Paramount +" class="thumb" href="https://3embeddecanais.xyz/paramountplus/">
+<img alt="Paramount +" decoding="async" src="https://embedcanaisdetv.com/images/paramountplus.png"/>
 </a>
 <div class="title">Paramount +</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/paramountplus/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Premiere Clubes" class="thumb" href="https://embedtvonline.com/premiereclubes/">
-<img alt="Premiere Clubes" decoding="async" src="https://embedtvonline.com/images/premiere.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/paramountplus/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Paramount + 02" class="thumb" href="https://3embeddecanais.xyz/paramountplus02/">
+<img alt="Paramount + 02" decoding="async" src="https://embedcanaisdetv.com/images/paramountplus.png"/>
+</a>
+<div class="title">Paramount + 02</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/paramountplus02/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Premiere Clubes" class="thumb" href="https://3embeddecanais.xyz/premiereclubes/">
+<img alt="Premiere Clubes" decoding="async" src="https://embedcanaisdetv.com/images/premiere.png"/>
 </a>
 <div class="title">Premiere Clubes</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/premiereclubes/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Premiere 2" class="thumb" href="https://embedtvonline.com/premiere2/">
-<img alt="Premiere 2" decoding="async" src="https://embedtvonline.com/images/premiere.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/premiereclubes/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Premiere 2" class="thumb" href="https://3embeddecanais.xyz/premiere2/">
+<img alt="Premiere 2" decoding="async" src="https://embedcanaisdetv.com/images/premiere.png"/>
 </a>
 <div class="title">Premiere 2</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/premiere2/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Premiere 3" class="thumb" href="https://embedtvonline.com/premiere3/">
-<img alt="Premiere 3" decoding="async" src="https://embedtvonline.com/images/premiere.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/premiere2/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Premiere 3" class="thumb" href="https://3embeddecanais.xyz/premiere3/">
+<img alt="Premiere 3" decoding="async" src="https://embedcanaisdetv.com/images/premiere.png"/>
 </a>
 <div class="title">Premiere 3</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/premiere3/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Premiere 4" class="thumb" href="https://embedtvonline.com/premiere4/">
-<img alt="Premiere 4" decoding="async" src="https://embedtvonline.com/images/premiere.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/premiere3/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Premiere 4" class="thumb" href="https://3embeddecanais.xyz/premiere4/">
+<img alt="Premiere 4" decoding="async" src="https://embedcanaisdetv.com/images/premiere.png"/>
 </a>
 <div class="title">Premiere 4</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/premiere4/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Premiere 5" class="thumb" href="https://embedtvonline.com/premiere5/">
-<img alt="Premiere 5" decoding="async" src="https://embedtvonline.com/images/premiere.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/premiere4/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Premiere 5" class="thumb" href="https://3embeddecanais.xyz/premiere5/">
+<img alt="Premiere 5" decoding="async" src="https://embedcanaisdetv.com/images/premiere.png"/>
 </a>
 <div class="title">Premiere 5</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/premiere5/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Premiere 6" class="thumb" href="https://embedtvonline.com/premiere6/">
-<img alt="Premiere 6" decoding="async" src="https://embedtvonline.com/images/premiere.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/premiere5/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Premiere 6" class="thumb" href="https://3embeddecanais.xyz/premiere6/">
+<img alt="Premiere 6" decoding="async" src="https://embedcanaisdetv.com/images/premiere.png"/>
 </a>
 <div class="title">Premiere 6</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/premiere6/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Premiere 7" class="thumb" href="https://embedtvonline.com/premiere7/">
-<img alt="Premiere 7" decoding="async" src="https://embedtvonline.com/images/premiere.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/premiere6/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Premiere 7" class="thumb" href="https://3embeddecanais.xyz/premiere7/">
+<img alt="Premiere 7" decoding="async" src="https://embedcanaisdetv.com/images/premiere.png"/>
 </a>
 <div class="title">Premiere 7</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/premiere7/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Premiere 8" class="thumb" href="https://embedtvonline.com/premiere8/">
-<img alt="Premiere 8" decoding="async" src="https://embedtvonline.com/images/premiere.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/premiere7/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Premiere 8" class="thumb" href="https://3embeddecanais.xyz/premiere8/">
+<img alt="Premiere 8" decoding="async" src="https://embedcanaisdetv.com/images/premiere.png"/>
 </a>
 <div class="title">Premiere 8</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/premiere8/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="SporTV" class="thumb" href="https://embedtvonline.com/sportv/">
-<img alt="SporTV" decoding="async" src="https://embedtvonline.com/images/sportv.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/premiere8/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="SporTV" class="thumb" href="https://3embeddecanais.xyz/sportv/">
+<img alt="SporTV" decoding="async" src="https://embedcanaisdetv.com/images/sportv.png"/>
 </a>
 <div class="title">SporTV</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/sportv/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="SporTV 2" class="thumb" href="https://embedtvonline.com/sportv2/">
-<img alt="SporTV 2" decoding="async" src="https://embedtvonline.com/images/sportv2.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/sportv/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="SporTV 2" class="thumb" href="https://3embeddecanais.xyz/sportv2/">
+<img alt="SporTV 2" decoding="async" src="https://embedcanaisdetv.com/images/sportv2.png"/>
 </a>
 <div class="title">SporTV 2</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/sportv2/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="SporTV 3" class="thumb" href="https://embedtvonline.com/sportv3/">
-<img alt="SporTV 3" decoding="async" src="https://embedtvonline.com/images/sportv3.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/sportv2/ allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="SporTV 3" class="thumb" href="https://3embeddecanais.xyz/sportv3/">
+<img alt="SporTV 3" decoding="async" src="https://embedcanaisdetv.com/images/sportv3.png"/>
 </a>
 <div class="title">SporTV 3</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/sportv3/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="TNT" class="thumb" href="https://embedtvonline.com/tnt/">
-<img alt="TNT" decoding="async" src="https://embedtvonline.com/images/tnt.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/sportv3/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="TNT" class="thumb" href="https://3embeddecanais.xyz/tnt/">
+<img alt="TNT" decoding="async" src="https://embedcanaisdetv.com/images/tnt.png"/>
 </a>
 <div class="title">TNT</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/tnt/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="UFC Fight Pass" class="thumb" href="https://embedtvonline.com/ufcfightpass/">
-<img alt="UFC Fight Pass" decoding="async" src="https://embedtvonline.com/images/ufcfightpass.png"/>
-</a>
-<div class="title">UFC Fight Pass</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/ufcfightpass/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Xsports" class="thumb" href="https://embedtvonline.com/xsports/">
-<img alt="Xsports" decoding="async" src="https://embedtvonline.com/images/xsports.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/tnt/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Xsports" class="thumb" href="https://3embeddecanais.xyz/xsports/">
+<img alt="Xsports" decoding="async" src="https://embedcanaisdetv.com/images/xsports.png"/>
 </a>
 <div class="title">Xsports</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/xsports/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/xsports/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
 </div>
 
-<h2 style="grid-column:1 / -1; text-align:center; margin:30px 0 8px; font-weight:800; color: #00d9ff;">Filmes e Séries</h2>
+
+
+<h2 style="grid-column:1 / -1; text-align:center; margin:30px 0 8px; font-weight:800; color: #00f3ff;">Reality Show</h2>
+
 <div class="card">
-<a aria-label="A&amp;E" class="thumb" href="https://embedtvonline.com/aee/">
-<img alt="A&amp;E" decoding="async" src="https://embedtvonline.com/images/aee.png"/>
+<a aria-label="BBB 01" class="thumb" href="https://3embeddecanais.xyz/bbb01/">
+<img alt="BBB 01" decoding="async" src="https://embedcanaisdetv.com/images/bbb.png"/>
+</a>
+<div class="title">BBB 01</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/bbb01/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div>
+
+<div class="card">
+<a aria-label="BBB 02" class="thumb" href="https://3embeddecanais.xyz/bbb02/">
+<img alt="BBB 02" decoding="async" src="https://embedcanaisdetv.com/images/bbb.png"/>
+</a>
+<div class="title">BBB 02</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/bbb02/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div>
+
+<div class="card">
+<a aria-label="BBB 03" class="thumb" href="https://3embeddecanais.xyz/bbb03/">
+<img alt="BBB 03" decoding="async" src="https://embedcanaisdetv.com/images/bbb.png"/>
+</a>
+<div class="title">BBB 03</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/bbb03/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div>
+
+<div class="card">
+<a aria-label="BBB 04" class="thumb" href="https://3embeddecanais.xyz/bbb04/">
+<img alt="BBB 04" decoding="async" src="https://embedcanaisdetv.com/images/bbb.png"/>
+</a>
+<div class="title">BBB 04</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/bbb04/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div>
+
+<div class="card">
+<a aria-label="BBB 05" class="thumb" href="https://3embeddecanais.xyz/bbb05/">
+<img alt="BBB 05" decoding="async" src="https://embedcanaisdetv.com/images/bbb.png"/>
+</a>
+<div class="title">BBB 05</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/bbb05/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div>
+
+<div class="card">
+<a aria-label="BBB 06" class="thumb" href="https://3embeddecanais.xyz/bbb06/">
+<img alt="BBB 06" decoding="async" src="https://embedcanaisdetv.com/images/bbb.png"/>
+</a>
+<div class="title">BBB 06</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/bbb06/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div>
+
+
+
+
+
+
+<h2 style="grid-column:1 / -1; text-align:center; margin:30px 0 8px; font-weight:800; color: #00f3ff;">Filmes e Séries</h2><div class="card">
+<a aria-label="A&amp;E" class="thumb" href="https://3embeddecanais.xyz/aee/">
+<img alt="A&amp;E" decoding="async" src="https://embedcanaisdetv.com/images/aee.png"/>
 </a>
 <div class="title">A&amp;E</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/aee/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="AMC" class="thumb" href="https://embedtvonline.com/amc/">
-<img alt="AMC" decoding="async" src="https://embedtvonline.com/images/amc.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/aee/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="AMC" class="thumb" href="https://3embeddecanais.xyz/amc/">
+<img alt="AMC" decoding="async" src="https://embedcanaisdetv.com/images/amc.png"/>
 </a>
 <div class="title">AMC</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/amc/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="AXN" class="thumb" href="https://embedtvonline.com/axn/">
-<img alt="AXN" decoding="async" src="https://embedtvonline.com/images/axn.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/amc/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="AXN" class="thumb" href="https://3embeddecanais.xyz/axn/">
+<img alt="AXN" decoding="async" src="https://embedcanaisdetv.com/images/axn.png"/>
 </a>
 <div class="title">AXN</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/axn/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Cinemax" class="thumb" href="https://embedtvonline.com/cinemax/">
-<img alt="Cinemax" decoding="async" src="https://embedtvonline.com/images/cinemax.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/axn/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Cinemax" class="thumb" href="https://3embeddecanais.xyz/cinemax/">
+<img alt="Cinemax" decoding="async" src="https://embedcanaisdetv.com/images/cinemax.png"/>
 </a>
 <div class="title">Cinemax</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/cinemax/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Globoplay Novelas" class="thumb" href="https://embedtvonline.com/globoplaynovelas/">
-<img alt="Globoplay Novelas" decoding="async" src="https://embedtvonline.com/images/globoplaynovelas.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/cinemax/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Globoplay Novelas" class="thumb" href="https://3embeddecanais.xyz/globoplaynovelas/">
+<img alt="Globoplay Novelas" decoding="async" src="https://embedcanaisdetv.com/images/globoplaynovelas.png"/>
 </a>
 <div class="title">Globoplay Novelas</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/globoplaynovelas/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="HBO" class="thumb" href="https://embedtvonline.com/hbo/">
-<img alt="HBO" decoding="async" src="https://embedtvonline.com/images/hbo.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/globoplaynovelas/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="HBO" class="thumb" href="https://3embeddecanais.xyz/hbo/">
+<img alt="HBO" decoding="async" src="https://embedcanaisdetv.com/images/hbo.png"/>
 </a>
 <div class="title">HBO</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/hbo/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="HBO 2" class="thumb" href="https://embedtvonline.com/hbo2/">
-<img alt="HBO 2" decoding="async" src="https://embedtvonline.com/images/hbo2.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/hbo/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="HBO 2" class="thumb" href="https://3embeddecanais.xyz/hbo2/">
+<img alt="HBO 2" decoding="async" src="https://embedcanaisdetv.com/images/hbo2.png"/>
 </a>
 <div class="title">HBO 2</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/hbo2/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="HBO Family" class="thumb" href="https://embedtvonline.com/hbofamily/">
-<img alt="HBO Family" decoding="async" src="https://embedtvonline.com/images/hbofamily.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/hbo2/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="HBO Family" class="thumb" href="https://3embeddecanais.xyz/hbofamily/">
+<img alt="HBO Family" decoding="async" src="https://embedcanaisdetv.com/images/hbofamily.png"/>
 </a>
 <div class="title">HBO Family</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/hbofamily/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="HBO Mundi" class="thumb" href="https://embedtvonline.com/hbomundi/">
-<img alt="HBO Mundi" decoding="async" src="https://embedtvonline.com/images/hbomundi.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/hbofamily/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="HBO Mundi" class="thumb" href="https://3embeddecanais.xyz/hbomundi/">
+<img alt="HBO Mundi" decoding="async" src="https://embedcanaisdetv.com/images/hbomundi.png"/>
 </a>
 <div class="title">HBO Mundi</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/hbomundi/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="HBO Plus" class="thumb" href="https://embedtvonline.com/hboplus/">
-<img alt="HBO Plus" decoding="async" src="https://embedtvonline.com/images/hboplus.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/hbomundi/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="HBO Plus" class="thumb" href="https://3embeddecanais.xyz/hboplus/">
+<img alt="HBO Plus" decoding="async" src="https://embedcanaisdetv.com/images/hboplus.png"/>
 </a>
 <div class="title">HBO Plus</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/hboplus/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="HBO Pop" class="thumb" href="https://embedtvonline.com/hbopop/">
-<img alt="HBO Pop" decoding="async" src="https://embedtvonline.com/images/hbopop.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/hboplus/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="HBO Pop" class="thumb" href="https://3embeddecanais.xyz/hbopop/">
+<img alt="HBO Pop" decoding="async" src="https://embedcanaisdetv.com/images/hbopop.png"/>
 </a>
 <div class="title">HBO Pop</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/hbopop/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="HBO Signature" class="thumb" href="https://embedtvonline.com/hbosignature/">
-<img alt="HBO Signature" decoding="async" src="https://embedtvonline.com/images/hbosignature.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/hbopop/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="HBO Signature" class="thumb" href="https://3embeddecanais.xyz/hbosignature/">
+<img alt="HBO Signature" decoding="async" src="https://embedcanaisdetv.com/images/hbosignature.png"/>
 </a>
 <div class="title">HBO Signature</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/hbosignature/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="HBO Xtreme" class="thumb" href="https://embedtvonline.com/hboxtreme/">
-<img alt="HBO Xtreme" decoding="async" src="https://embedtvonline.com/images/hboxtreme.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/hbosignature/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="HBO Xtreme" class="thumb" href="https://3embeddecanais.xyz/hboxtreme/">
+<img alt="HBO Xtreme" decoding="async" src="https://embedcanaisdetv.com/images/hboxtreme.png"/>
 </a>
 <div class="title">HBO Xtreme</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/hboxtreme/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Megapix" class="thumb" href="https://embedtvonline.com/megapix/">
-<img alt="Megapix" decoding="async" src="https://embedtvonline.com/images/megapix.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/hboxtreme/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Megapix" class="thumb" href="https://3embeddecanais.xyz/megapix/">
+<img alt="Megapix" decoding="async" src="https://embedcanaisdetv.com/images/megapix.png"/>
 </a>
 <div class="title">Megapix</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/megapix/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Paramount Network" class="thumb" href="https://embedtvonline.com/paramountnetwork/">
-<img alt="Paramount Network" decoding="async" src="https://embedtvonline.com/images/paramountnetwork.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/megapix/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Paramount Network" class="thumb" href="https://3embeddecanais.xyz/paramountnetwork/">
+<img alt="Paramount Network" decoding="async" src="https://embedcanaisdetv.com/images/paramountnetwork.png"/>
 </a>
 <div class="title">Paramount Network</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/paramountnetwork/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Sony Channel" class="thumb" href="https://embedtvonline.com/sonychannel/">
-<img alt="Sony Channel" decoding="async" src="https://embedtvonline.com/images/sonychannel.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/paramountnetwork/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Sony Channel" class="thumb" href="https://3embeddecanais.xyz/sonychannel/">
+<img alt="Sony Channel" decoding="async" src="https://embedcanaisdetv.com/images/sonychannel.png"/>
 </a>
 <div class="title">Sony Channel</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/sonychannel/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Space" class="thumb" href="https://embedtvonline.com/space/">
-<img alt="Space" decoding="async" src="https://embedtvonline.com/images/space.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/sonychannel/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Space" class="thumb" href="https://3embeddecanais.xyz/space/">
+<img alt="Space" decoding="async" src="https://embedcanaisdetv.com/images/space.png"/>
 </a>
 <div class="title">Space</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/space/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Studio Universal" class="thumb" href="https://embedtvonline.com/studiouniversal/">
-<img alt="Studio Universal" decoding="async" src="https://embedtvonline.com/images/studiouniversal.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/space/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Studio Universal" class="thumb" href="https://3embeddecanais.xyz/studiouniversal/">
+<img alt="Studio Universal" decoding="async" src="https://embedcanaisdetv.com/images/studiouniversal.png"/>
 </a>
 <div class="title">Studio Universal</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/studiouniversal/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Telecine Action" class="thumb" href="https://embedtvonline.com/tcaction/">
-<img alt="Telecine Action" decoding="async" src="https://embedtvonline.com/images/tcaction.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/studiouniversal/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Telecine Action" class="thumb" href="https://3embeddecanais.xyz/tcaction/">
+<img alt="Telecine Action" decoding="async" src="https://embedcanaisdetv.com/images/tcaction.png"/>
 </a>
 <div class="title">Telecine Action</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/tcaction/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Telecine Cult" class="thumb" href="https://embedtvonline.com/tccult/">
-<img alt="Telecine Cult" decoding="async" src="https://embedtvonline.com/images/tccult.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/tcaction/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Telecine Cult" class="thumb" href="https://3embeddecanais.xyz/tccult/">
+<img alt="Telecine Cult" decoding="async" src="https://embedcanaisdetv.com/images/tccult.png"/>
 </a>
 <div class="title">Telecine Cult</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/tccult/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Telecine Fun" class="thumb" href="https://embedtvonline.com/tcfun/">
-<img alt="Telecine Fun" decoding="async" src="https://embedtvonline.com/images/tcfun.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/tccult/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Telecine Fun" class="thumb" href="https://3embeddecanais.xyz/tcfun/">
+<img alt="Telecine Fun" decoding="async" src="https://embedcanaisdetv.com/images/tcfun.png"/>
 </a>
 <div class="title">Telecine Fun</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/tcfun/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Telecine Pipoca" class="thumb" href="https://embedtvonline.com/tcpipoca/">
-<img alt="Telecine Pipoca" decoding="async" src="https://embedtvonline.com/images/tcpipoca.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/tcfun/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Telecine Pipoca" class="thumb" href="https://3embeddecanais.xyz/tcpipoca/">
+<img alt="Telecine Pipoca" decoding="async" src="https://embedcanaisdetv.com/images/tcpipoca.png"/>
 </a>
 <div class="title">Telecine Pipoca</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/tcpipoca/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Telecine Premium" class="thumb" href="https://embedtvonline.com/tcpremium/">
-<img alt="Telecine Premium" decoding="async" src="https://embedtvonline.com/images/tcpremium.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/tcpipoca/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Telecine Premium" class="thumb" href="https://3embeddecanais.xyz/tcpremium/">
+<img alt="Telecine Premium" decoding="async" src="https://embedcanaisdetv.com/images/tcpremium.png"/>
 </a>
 <div class="title">Telecine Premium</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/tcpremium/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Telecine Touch" class="thumb" href="https://embedtvonline.com/tctouch/">
-<img alt="Telecine Touch" decoding="async" src="https://embedtvonline.com/images/tctouch.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/tcpremium/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Telecine Touch" class="thumb" href="https://3embeddecanais.xyz/tctouch/">
+<img alt="Telecine Touch" decoding="async" src="https://embedcanaisdetv.com/images/tctouch.png"/>
 </a>
 <div class="title">Telecine Touch</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/tctouch/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="TNT" class="thumb" href="https://embedtvonline.com/tnt/">
-<img alt="TNT" decoding="async" src="https://embedtvonline.com/images/tnt.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/tctouch/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="TNT" class="thumb" href="https://3embeddecanais.xyz/tnt/">
+<img alt="TNT" decoding="async" src="https://embedcanaisdetv.com/images/tnt.png"/>
 </a>
 <div class="title">TNT</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/tnt/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="TNT Novelas" class="thumb" href="https://embedtvonline.com/tntnovelas/">
-<img alt="TNT Novelas" decoding="async" src="https://embedtvonline.com/images/tntnovelas.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/tnt/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="TNT Novelas" class="thumb" href="https://3embeddecanais.xyz/tntnovelas/">
+<img alt="TNT Novelas" decoding="async" src="https://embedcanaisdetv.com/images/tntnovelas.png"/>
 </a>
 <div class="title">TNT Novelas</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/tntnovelas/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="TNT Series" class="thumb" href="https://embedtvonline.com/tntseries/">
-<img alt="TNT Series" decoding="async" src="https://embedtvonline.com/images/tntseries.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/tntnovelas/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="TNT Series" class="thumb" href="https://3embeddecanais.xyz/tntseries/">
+<img alt="TNT Series" decoding="async" src="https://embedcanaisdetv.com/images/tntseries.png"/>
 </a>
 <div class="title">TNT Series</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/tntseries/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Universal TV" class="thumb" href="https://embedtvonline.com/universaltv/">
-<img alt="Universal TV" decoding="async" src="https://embedtvonline.com/images/universaltv.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/tntseries/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Universal TV" class="thumb" href="https://3embeddecanais.xyz/universaltv/">
+<img alt="Universal TV" decoding="async" src="https://embedcanaisdetv.com/images/universaltv.png"/>
 </a>
 <div class="title">Universal TV</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/universaltv/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Warner Channel" class="thumb" href="https://embedtvonline.com/warner/">
-<img alt="Warner Channel" decoding="async" src="https://embedtvonline.com/images/warner.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/universaltv/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Warner Channel" class="thumb" href="https://3embeddecanais.xyz/warner/">
+<img alt="Warner Channel" decoding="async" src="https://embedcanaisdetv.com/images/warnertv.png"/>
 </a>
 <div class="title">Warner Channel</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/warner/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-
-<h2 style="grid-column:1 / -1; text-align:center; margin:30px 0 8px; font-weight:800; color: #00d9ff;">Canais Abertos</h2>
-<div class="card">
-<a aria-label="Band SP" class="thumb" href="https://embedtvonline.com/bandsp/">
-<img alt="Band SP" decoding="async" src="https://embedtvonline.com/images/bandsp.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/warner/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><h2 style="grid-column:1 / -1; text-align:center; margin:30px 0 8px; font-weight:800; color: #00f3ff;">Canais Abertos</h2><div class="card">
+<a aria-label="Band SP" class="thumb" href="https://3embeddecanais.xyz/bandsp/">
+<img alt="Band SP" decoding="async" src="https://embedcanaisdetv.com/images/bandsp.png"/>
 </a>
 <div class="title">Band SP</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/bandsp/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Globo MG" class="thumb" href="https://embedtvonline.com/globomg/">
-<img alt="Globo MG" decoding="async" src="https://embedtvonline.com/images/globo.webp"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/bandsp/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Globo MG" class="thumb" href="https://3embeddecanais.xyz/globomg/">
+<img alt="Globo MG" decoding="async" src="https://embedcanaisdetv.com/images/globo.webp"/>
 </a>
 <div class="title">Globo MG</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/globomg/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Globo RJ" class="thumb" href="https://embedtvonline.com/globorj/">
-<img alt="Globo RJ" decoding="async" src="https://embedtvonline.com/images/globo.webp"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/globomg/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Globo RJ" class="thumb" href="https://3embeddecanais.xyz/globorj/">
+<img alt="Globo RJ" decoding="async" src="https://embedcanaisdetv.com/images/globo.webp"/>
 </a>
 <div class="title">Globo RJ</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/globorj/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Globo RS" class="thumb" href="https://embedtvonline.com/globors/">
-<img alt="Globo RS" decoding="async" src="https://embedtvonline.com/images/globo.webp"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/globorj/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Globo RS" class="thumb" href="https://3embeddecanais.xyz/globors/">
+<img alt="Globo RS" decoding="async" src="https://embedcanaisdetv.com/images/globo.webp"/>
 </a>
 <div class="title">Globo RS</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/globors/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Globo SP" class="thumb" href="https://embedtvonline.com/globosp/">
-<img alt="Globo SP" decoding="async" src="https://embedtvonline.com/images/globo.webp"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/globors/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Globo SP" class="thumb" href="https://3embeddecanais.xyz/globosp/">
+<img alt="Globo SP" decoding="async" src="https://embedcanaisdetv.com/images/globo.webp"/>
 </a>
 <div class="title">Globo SP</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/globosp/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Record MG" class="thumb" href="https://embedtvonline.com/recordmg/">
-<img alt="Record MG" decoding="async" src="https://embedtvonline.com/images/record.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/globosp/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Record MG" class="thumb" href="https://3embeddecanais.xyz/recordmg/">
+<img alt="Record MG" decoding="async" src="https://embedcanaisdetv.com/images/record.png"/>
 </a>
 <div class="title">Record MG</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/recordmg/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Record RJ" class="thumb" href="https://embedtvonline.com/recordrj/">
-<img alt="Record RJ" decoding="async" src="https://embedtvonline.com/images/record.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/recordmg/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Record RJ" class="thumb" href="https://3embeddecanais.xyz/recordrj/">
+<img alt="Record RJ" decoding="async" src="https://embedcanaisdetv.com/images/record.png"/>
 </a>
 <div class="title">Record RJ</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/recordrj/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Record SP" class="thumb" href="https://embedtvonline.com/recordsp/">
-<img alt="Record SP" decoding="async" src="https://embedtvonline.com/images/record.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/recordrj/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Record SP" class="thumb" href="https://3embeddecanais.xyz/recordsp/">
+<img alt="Record SP" decoding="async" src="https://embedcanaisdetv.com/images/record.png"/>
 </a>
 <div class="title">Record SP</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/recordsp/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="RedeTV!" class="thumb" href="https://embedtvonline.com/redetv/">
-<img alt="RedeTV!" decoding="async" src="https://embedtvonline.com/images/redetv.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/recordsp/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="RedeTV!" class="thumb" href="https://3embeddecanais.xyz/redetv/">
+<img alt="RedeTV!" decoding="async" src="https://embedcanaisdetv.com/images/redetv.png"/>
 </a>
 <div class="title">RedeTV!</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/redetv/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="SBT SP" class="thumb" href="https://embedtvonline.com/sbtsp/">
-<img alt="SBT SP" decoding="async" src="https://embedtvonline.com/images/sbtsp.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/redetv/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="SBT SP" class="thumb" href="https://3embeddecanais.xyz/sbtsp/">
+<img alt="SBT SP" decoding="async" src="https://embedcanaisdetv.com/images/sbtsp.png"/>
 </a>
 <div class="title">SBT SP</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/sbtsp/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="TV Cultura" class="thumb" href="https://embedtvonline.com/tvcultura/">
-<img alt="TV Cultura" decoding="async" src="https://embedtvonline.com/images/tvcultura.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/sbtsp/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="TV Cultura" class="thumb" href="https://3embeddecanais.xyz/tvcultura/">
+<img alt="TV Cultura" decoding="async" src="https://embedcanaisdetv.com/images/tvcultura.png"/>
 </a>
 <div class="title">TV Cultura</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/tvcultura/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-
-<h2 style="grid-column:1 / -1; text-align:center; margin:30px 0 8px; font-weight:800; color: #00d9ff;">Variedades</h2>
-<div class="card">
-<a aria-label="Adult Swim" class="thumb" href="https://embedtvonline.com/adultswim/">
-<img alt="Adult Swim" decoding="async" src="https://embedtvonline.com/images/adultswim.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/tvcultura/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><h2 style="grid-column:1 / -1; text-align:center; margin:30px 0 8px; font-weight:800; color: #00f3ff;">Variedades</h2><div class="card">
+<a aria-label="Adult Swim" class="thumb" href="https://3embeddecanais.xyz/adultswim/">
+<img alt="Adult Swim" decoding="async" src="https://embedcanaisdetv.com/images/adultswim.png"/>
 </a>
 <div class="title">Adult Swim</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/adultswim/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Animal Planet" class="thumb" href="https://embedtvonline.com/animalplanet/">
-<img alt="Animal Planet" decoding="async" src="https://embedtvonline.com/images/animalplanet.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/adultswim/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Animal Planet" class="thumb" href="https://3embeddecanais.xyz/animalplanet/">
+<img alt="Animal Planet" decoding="async" src="https://embedcanaisdetv.com/images/animalplanet.png"/>
 </a>
 <div class="title">Animal Planet</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/animalplanet/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Discovery Channel" class="thumb" href="https://embedtvonline.com/discoverychannel/">
-<img alt="Discovery Channel" decoding="async" src="https://embedtvonline.com/images/discoverychannel.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/animalplanet/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Comedy Central" class="thumb" href="https://3embeddecanais.xyz/comedycentral/">
+<img alt="Comedy Central" decoding="async" src="https://embedcanaisdetv.com/images/comedycentral.png"/>
+</a>
+<div class="title">Comedy Central</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/comedycentral/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Discovery Channel" class="thumb" href="https://3embeddecanais.xyz/discoverychannel/">
+<img alt="Discovery Channel" decoding="async" src="https://embedcanaisdetv.com/images/discoverychannel.png"/>
 </a>
 <div class="title">Discovery Channel</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/discoverychannel/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Discovery Home &amp; Health" class="thumb" href="https://embedtvonline.com/discoveryhh/">
-<img alt="Discovery Home &amp; Health" decoding="async" src="https://embedtvonline.com/images/discoveryhh.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/discoverychannel/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Discovery Home &amp; Health" class="thumb" href="https://3embeddecanais.xyz/discoveryhh/">
+<img alt="Discovery Home &amp; Health" decoding="async" src="https://embedcanaisdetv.com/images/discoveryhh.png"/>
 </a>
 <div class="title">Discovery Home &amp; Health</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/discoveryhh/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Investigation Discovery" class="thumb" href="https://embedtvonline.com/discoveryid/">
-<img alt="Investigation Discovery" decoding="async" src="https://embedtvonline.com/images/discoveryid.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/discoveryhh/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Investigation Discovery" class="thumb" href="https://3embeddecanais.xyz/discoveryid/">
+<img alt="Investigation Discovery" decoding="async" src="https://embedcanaisdetv.com/images/discoveryid.png"/>
 </a>
 <div class="title">Investigation Discovery</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/discoveryid/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Discovery Science" class="thumb" href="https://embedtvonline.com/discoveryscience/">
-<img alt="Discovery Science" decoding="async" src="https://embedtvonline.com/images/discoveryscience.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/discoveryid/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Discovery Science" class="thumb" href="https://3embeddecanais.xyz/discoveryscience/">
+<img alt="Discovery Science" decoding="async" src="https://embedcanaisdetv.com/images/discoveryscience.png"/>
 </a>
 <div class="title">Discovery Science</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/discoveryscience/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Discovery Theater" class="thumb" href="https://embedtvonline.com/discoverytheater/">
-<img alt="Discovery Theater" decoding="async" src="https://embedtvonline.com/images/discoverytheater.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/discoveryscience/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Discovery Theater" class="thumb" href="https://3embeddecanais.xyz/discoverytheater/">
+<img alt="Discovery Theater" decoding="async" src="https://embedcanaisdetv.com/images/discoverytheater.png"/>
 </a>
 <div class="title">Discovery Theater</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/discoverytheater/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Discovery Turbo" class="thumb" href="https://embedtvonline.com/discoveryturbo/">
-<img alt="Discovery Turbo" decoding="async" src="https://embedtvonline.com/images/discoveryturbo.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/discoverytheater/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Discovery Turbo" class="thumb" href="https://3embeddecanais.xyz/discoveryturbo/">
+<img alt="Discovery Turbo" decoding="async" src="https://embedcanaisdetv.com/images/discoveryturbo.png"/>
 </a>
 <div class="title">Discovery Turbo</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/discoveryturbo/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Discovery World" class="thumb" href="https://embedtvonline.com/discoveryworld/">
-<img alt="Discovery World" decoding="async" src="https://embedtvonline.com/images/discoveryworld.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/discoveryturbo/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Discovery World" class="thumb" href="https://3embeddecanais.xyz/discoveryworld/">
+<img alt="Discovery World" decoding="async" src="https://embedcanaisdetv.com/images/discoveryworld.png"/>
 </a>
 <div class="title">Discovery World</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/discoveryworld/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Food Network" class="thumb" href="https://embedtvonline.com/foodnetwork/">
-<img alt="Food Network" decoding="async" src="https://embedtvonline.com/images/foodnetwork.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/discoveryworld/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Food Network" class="thumb" href="https://3embeddecanais.xyz/foodnetwork/">
+<img alt="Food Network" decoding="async" src="https://embedcanaisdetv.com/images/foodnetwork.png"/>
 </a>
 <div class="title">Food Network</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/foodnetwork/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="GNT" class="thumb" href="https://embedtvonline.com/gnt/">
-<img alt="GNT" decoding="async" src="https://embedtvonline.com/images/gnt.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/foodnetwork/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="GNT" class="thumb" href="https://3embeddecanais.xyz/gnt/">
+<img alt="GNT" decoding="async" src="https://embedcanaisdetv.com/images/gnt.png"/>
 </a>
 <div class="title">GNT</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/gnt/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="HGTV" class="thumb" href="https://embedtvonline.com/hgtv/">
-<img alt="HGTV" decoding="async" src="https://embedtvonline.com/images/hgtv.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/gnt/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="HGTV" class="thumb" href="https://3embeddecanais.xyz/hgtv/">
+<img alt="HGTV" decoding="async" src="https://embedcanaisdetv.com/images/hgtv.png"/>
 </a>
 <div class="title">HGTV</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/hgtv/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="History" class="thumb" href="https://embedtvonline.com/history/">
-<img alt="History" decoding="async" src="https://embedtvonline.com/images/history.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/hgtv/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="History" class="thumb" href="https://3embeddecanais.xyz/history/">
+<img alt="History" decoding="async" src="https://embedcanaisdetv.com/images/history.png"/>
 </a>
 <div class="title">History</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/history/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="History 2" class="thumb" href="https://embedtvonline.com/history2/">
-<img alt="History 2" decoding="async" src="https://embedtvonline.com/images/history2.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/history/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="History 2" class="thumb" href="https://3embeddecanais.xyz/history2/">
+<img alt="History 2" decoding="async" src="https://embedcanaisdetv.com/images/history2.png"/>
 </a>
 <div class="title">History 2</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/history2/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Multishow" class="thumb" href="https://embedtvonline.com/multishow/">
-<img alt="Multishow" decoding="async" src="https://embedtvonline.com/images/multishow.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/history2/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="MTV" class="thumb" href="https://3embeddecanais.xyz/mtv/">
+<img alt="MTV" decoding="async" src="https://embedcanaisdetv.com/images/mtv.png"/>
+</a>
+<div class="title">MTV</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/mtv/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Multishow" class="thumb" href="https://3embeddecanais.xyz/multishow/">
+<img alt="Multishow" decoding="async" src="https://embedcanaisdetv.com/images/multishow.png"/>
 </a>
 <div class="title">Multishow</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/multishow/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="National Geographic" class="thumb" href="https://embedtvonline.com/natgeo/">
-<img alt="National Geographic" decoding="async" src="https://embedtvonline.com/images/natgeo.png"/>
-</a>
-<div class="title">National Geographic</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/natgeo/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="National Geographic Wild" class="thumb" href="https://embedtvonline.com/natgeowild/">
-<img alt="National Geographic Wild" decoding="async" src="https://embedtvonline.com/images/natgeowild.png"/>
-</a>
-<div class="title">National Geographic Wild</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/natgeowild/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="TLC" class="thumb" href="https://embedtvonline.com/tlc/">
-<img alt="TLC" decoding="async" src="https://embedtvonline.com/images/tlc.png"/>
-</a>
-<div class="title">TLC</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/tlc/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Travel Box Brazil" class="thumb" href="https://embedtvonline.com/travelbox/">
-<img alt="Travel Box Brazil" decoding="async" src="https://embedtvonline.com/images/travelbox.png"/>
-</a>
-<div class="title">Travel Box Brazil</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/travelbox/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="VH1" class="thumb" href="https://embedtvonline.com/vh1/">
-<img alt="VH1" decoding="async" src="https://embedtvonline.com/images/vh1.png"/>
-</a>
-<div class="title">VH1</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/vh1/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/multishow/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
 </div>
 
-<h2 style="grid-column:1 / -1; text-align:center; margin:30px 0 8px; font-weight:800; color: #00d9ff;">Notícias</h2>
-<div class="card">
-<a aria-label="BandNews" class="thumb" href="https://embedtvonline.com/bandnews/">
-<img alt="BandNews" decoding="async" src="https://embedtvonline.com/images/bandnews.png"/>
+<h2 style="grid-column:1 / -1; text-align:center; margin:30px 0 8px; font-weight:800; color: #00f3ff;">Notícias</h2><div class="card">
+<a aria-label="BandNews" class="thumb" href="https://3embeddecanais.xyz/bandnews/">
+<img alt="BandNews" decoding="async" src="https://embedcanaisdetv.com/images/bandnews.png"/>
 </a>
 <div class="title">BandNews</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/bandnews/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="CNN Brasil" class="thumb" href="https://embedtvonline.com/cnnbrasil/">
-<img alt="CNN Brasil" decoding="async" src="https://embedtvonline.com/images/cnnbrasil.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/bandnews/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="CNN Brasil" class="thumb" href="https://3embeddecanais.xyz/cnnbrasil/">
+<img alt="CNN Brasil" decoding="async" src="https://embedcanaisdetv.com/images/cnnbrasil.png"/>
 </a>
 <div class="title">CNN Brasil</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/cnnbrasil/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="GloboNews" class="thumb" href="https://embedtvonline.com/globonews/">
-<img alt="GloboNews" decoding="async" src="https://embedtvonline.com/images/globonews.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/cnnbrasil/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="GloboNews" class="thumb" href="https://3embeddecanais.xyz/globonews/">
+<img alt="GloboNews" decoding="async" src="https://embedcanaisdetv.com/images/globonews.png"/>
 </a>
 <div class="title">GloboNews</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/globonews/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Jovem Pan News" class="thumb" href="https://embedtvonline.com/jovempannews/">
-<img alt="Jovem Pan News" decoding="async" src="https://embedtvonline.com/images/jovempannews.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/globonews/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Jovem Pan News" class="thumb" href="https://3embeddecanais.xyz/jovempannews/">
+<img alt="Jovem Pan News" decoding="async" src="https://embedcanaisdetv.com/images/jovempannews.png"/>
 </a>
 <div class="title">Jovem Pan News</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/jovempannews/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
-</div>
-<div class="card">
-<a aria-label="Record News" class="thumb" href="https://embedtvonline.com/recordnews/">
-<img alt="Record News" decoding="async" src="https://embedtvonline.com/images/recordnews.png"/>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/jovempannews/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Record News" class="thumb" href="https://3embeddecanais.xyz/recordnews/">
+<img alt="Record News" decoding="async" src="https://embedcanaisdetv.com/images/recordnews.png"/>
 </a>
 <div class="title">Record News</div>
-<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://embedtvonline.com/recordnews/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/recordnews/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
 </div>
 
+<h2 style="grid-column:1 / -1; text-align:center; margin:30px 0 8px; font-weight:800; color: #00f3ff;">Infantil</h2>
+<div class="card">
+<a aria-label="Cartoonito" class="thumb" href="https://3embeddecanais.xyz/cartoonito/">
+<img alt="Cartoonito" decoding="async" src="https://embedcanaisdetv.com/images/cartoonito.png"/>
+</a>
+<div class="title">Cartoonito</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/cartoonito/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Cartoon Network" class="thumb" href="https://3embeddecanais.xyz/cartoonnetwork/">
+<img alt="Cartoon Network" decoding="async" src="https://embedcanaisdetv.com/images/cartoonnetwork.png"/>
+</a>
+<div class="title">Cartoon Network</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/cartoonnetwork/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Discovery Kids" class="thumb" href="https://3embeddecanais.xyz/discoverykids/">
+<img alt="Discovery Kids" decoding="async" src="https://embedcanaisdetv.com/images/discoverykids.png"/>
+</a>
+<div class="title">Discovery Kids</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/discoverykids/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="DreamWorks" class="thumb" href="https://3embeddecanais.xyz/dreamworks/">
+<img alt="DreamWorks" decoding="async" src="https://embedcanaisdetv.com/images/dreamworks.png"/>
+</a>
+<div class="title">DreamWorks</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/dreamworks/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Gloob" class="thumb" href="https://3embeddecanais.xyz/gloob/">
+<img alt="Gloob" decoding="async" src="https://embedcanaisdetv.com/images/gloob.png"/>
+</a>
+<div class="title">Gloob</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/gloob/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Gloobinho" class="thumb" href="https://3embeddecanais.xyz/gloobinho/">
+<img alt="Gloobinho" decoding="async" src="https://embedcanaisdetv.com/images/gloobinho.png"/>
+</a>
+<div class="title">Gloobinho</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/gloobinho/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Nickelodeon" class="thumb" href="https://3embeddecanais.xyz/nickelodeon/">
+<img alt="Nickelodeon" decoding="async" src="https://embedcanaisdetv.com/images/nickelodeon.png"/>
+</a>
+<div class="title">Nickelodeon</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/nickelodeon/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Nick Jr." class="thumb" href="https://3embeddecanais.xyz/nickjr/">
+<img alt="Nick Jr." decoding="async" src="https://embedcanaisdetv.com/images/nickjr.png"/>
+</a>
+<div class="title">Nick Jr.</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/nickjr/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div><div class="card">
+<a aria-label="Tooncast" class="thumb" href="https://3embeddecanais.xyz/tooncast/">
+<img alt="Tooncast" decoding="async" src="https://embedcanaisdetv.com/images/tooncast.png"/>
+</a>
+<div class="title">Tooncast</div>
+<div class="embedrow"><input class="embed-input" readonly="" type="text" value='&lt;iframe src="https://3embeddecanais.xyz/tooncast/" allow="autoplay; fullscreen; encrypted-media" frameborder="0" width="100%" height="550" loading="lazy"&gt;&lt;/iframe&gt;'/></div>
+</div>
+
+  
 </main>
 
+
+
 <footer class="embedtv" role="contentinfo">
-  <small style="display:block;">© Roger Play. Teste cm+!L>.</small>
+  <small style="display:block;">© Embed Canais TV Online. Ao incorporar, respeite direitos autorais e termos de cada canal.</small>
 </footer>
 
+
+<!-- JS: categorias + busca + copiar -->
 <script>
 (function(){
   const grid = document.querySelector('.grid');
@@ -971,6 +1239,7 @@ footer.embedtv small{font-size:12px;letter-spacing:.2px}
   const catBar = document.getElementById('catBar');
   const searchInput = document.getElementById('searchInput');
 
+  // Mapeia categorias a partir dos H2 e marca cada .card com data-category
   const children = Array.from(grid.children);
   let currentCat = '';
   children.forEach(el => {
@@ -984,6 +1253,7 @@ footer.embedtv small{font-size:12px;letter-spacing:.2px}
     }
   });
 
+  // Lista de categorias (inclui "Todos")
   const categories = ['Todos'];
   children.forEach(el => {
     if(el.tagName === 'H2'){
@@ -992,6 +1262,7 @@ footer.embedtv small{font-size:12px;letter-spacing:.2px}
     }
   });
 
+  // Render dos botões de categoria
   let activeCategory = 'Todos';
   function renderCatButtons(){
     if(!catBar) return;
@@ -1012,6 +1283,7 @@ footer.embedtv small{font-size:12px;letter-spacing:.2px}
   }
   renderCatButtons();
 
+  // Busca global: se houver texto, ignora a categoria e busca em todos
   let q = '';
   if(searchInput){
     searchInput.addEventListener('input', () => {
@@ -1020,6 +1292,7 @@ footer.embedtv small{font-size:12px;letter-spacing:.2px}
     });
   }
 
+  // Botão copiar dentro de cada .embedrow (ícone CHECK fornecido)
   function enhanceCopyButtons(){
     document.querySelectorAll('.embedrow').forEach(row => {
       if(row.querySelector('.copy-btn')) return;
@@ -1032,6 +1305,7 @@ footer.embedtv small{font-size:12px;letter-spacing:.2px}
   'aria-hidden="true" focusable="false" fill="#8d93a0">' +
   '<path d="M288 64C252.7 64 224 92.7 224 128L224 384C224 419.3 252.7 448 288 448L480 448C515.3 448 544 419.3 544 384L544 183.4C544 166 536.9 149.3 524.3 137.2L466.6 81.8C454.7 70.4 438.8 64 422.3 64L288 64zM160 192C124.7 192 96 220.7 96 256L96 512C96 547.3 124.7 576 160 576L352 576C387.3 576 416 547.3 416 512L416 496L352 496L352 512L160 512L160 256L176 256L176 192L160 192z"/>' +
   '</svg>';
+
       btn.addEventListener('click', async () => {
         const input = row.querySelector('.embed-input');
         const val = input ? input.value : '';
@@ -1047,6 +1321,7 @@ footer.embedtv small{font-size:12px;letter-spacing:.2px}
         }
       });
       row.appendChild(btn);
+
       const t = document.createElement('div');
       t.className = 'copy-toast';
       t.textContent = 'Copiado!';
@@ -1062,6 +1337,7 @@ footer.embedtv small{font-size:12px;letter-spacing:.2px}
     setTimeout(()=>t.classList.remove('show'), 900);
   }
 
+  // Aplica filtros: se tem busca -> ignora categoria; senão usa categoria ativa
   function applyFilters(){
     const cards = Array.from(grid.querySelectorAll('.card'));
     const hasQuery = q && q.trim().length > 0;
@@ -1073,6 +1349,7 @@ footer.embedtv small{font-size:12px;letter-spacing:.2px}
       card.style.display = (catOk && qOk) ? '' : 'none';
     });
 
+    // Esconde H2 que ficarem sem cards visíveis logo abaixo
     const blocks = [];
     let current = null;
     Array.from(grid.children).forEach(el => {
@@ -1096,6 +1373,6 @@ footer.embedtv small{font-size:12px;letter-spacing:.2px}
 })();
 </script>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"baa63aec72774167ba91751afaa97205","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-</body>
-</html>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"3789b4935f9b417eaf97bb05f2d5c54a","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body></html>
